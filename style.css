@@ -29,6 +29,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -40,7 +41,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -83,6 +85,11 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  animation: slide-out 0.3s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--hightlight-color);
 }
 
 #switch span {
@@ -97,8 +104,7 @@ body * {
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.3s forwards;
 }
 
 /* Social Links*/
@@ -156,4 +162,36 @@ footer {
   margin-top: 24px;
   text-align: center;
   font-size: 14px;
+}
+
+/* Mdedia Queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* Animtions*/
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+
+  to {
+    left: 0;
+  }
 }
