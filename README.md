@@ -22,7 +22,7 @@ O ZounTech Links é um agregador de links que utilizarei para armazenar os links
 ## 🎓 Aprendizado
 
 Este projeto foi desenvolvido acompanhando as aulas do treinamento Discover da Rocketseat.
-Aprendi conceitos básicos de HTML, CSS e javaScript, além de uma introdução ao Figma.
+Aprendi conceitos básicos de HTML, CSS e JavaScript, além de uma introdução ao Figma.
 
 ---
 
